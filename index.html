@@ -1,75 +1,125 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>زندگی نامه</title>
+    <title>زندگی نامه محمدجواد جاودانفرد</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center; /* وسط‌چین افقی */
-            align-items: center; /* وسط‌چین عمودی */
-            height: 100vh; /* ارتفاع کل صفحه */
-            color: #333; /* رنگ متن */
-            text-align: center; /* تراز متن به وسط */
-            background: linear-gradient(270deg, #ffeb3b, #4caf50, #f44336); /* رنگ‌های پس‌زمینه */
-            background-size: 600% 600%; /* سایز پس‌زمینه */
-            animation: gradient 15s ease infinite; /* انیمیشن پس‌زمینه */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            background: linear-gradient(100deg, #b81802, rgb(6, 63, 220), #c5cc00);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
         }
 
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .container {
-            max-width: 800px; /* حداکثر عرض برای محتوای متن */
-            padding: 20px; /* فاصله داخلی */
-            background-color: rgba(255, 255, 255, 0.8); /* پس‌زمینه سفید با شفافیت */
-            border-radius: 10px; /* گرد کردن گوشه‌ها */
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* سایه */
+            text-align: center;
+            background-color: rgba(50, 50, 50, 0.85);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            max-width: 400px;
+            width: 90%;
         }
 
-        h1 {
-            margin-bottom: 20px; /* فاصله پایین عنوان */
+        .container img {
+            max-width: 100px;
+            margin-bottom: 15px;
         }
 
-        p {
-            line-height: 1.6; /* فاصله خطوط برای متن */
+        .container h1 {
+            margin: 0 0 15px;
+            font-size: 24px;
+            color: #ffffff;
         }
-        
-        img {
-            max-width: 20%; /* تنظیم عرض تصویر به حداکثر 50% */
-            height: auto; /* حفظ نسبت ابعاد */
-            border-radius: 10px; /* گرد کردن گوشه‌های تصویر */
-            margin-bottom: 20px; /* فاصله پایین تصویر */
+
+        .container p {
+            margin: 0;
+            font-size: 20px;
+            color: #dcdcdc;
+        }
+
+        .info-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            background-color: #03088e;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 5px 15px rgba(6, 186, 180, 0.937);
+            transition: all 0.3s ease;
+        }
+
+        .info-button:hover {
+            background-color: #444;
+            transform: translateY(-3px);
+        }
+
+        .info-box {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: rgba(50, 50, 50, 0.95);
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            max-width: 320px;
+            font-size: 16px;
+        }
+
+        .info-box p {
+            margin-bottom: 10px;
+        }
+
+        .info-box strong {
+            color: #ffcc00;
         }
     </style>
 </head>
 <body>
+    <button class="info-button" onclick="toggleInfoBox()">درباره</button>
+    <div class="info-box" id="infoBox">
+        <p><strong>محل سکونت:</strong>مشهد - میدان شهدا</p>
+        <p><strong>شماره همراه:</strong> 09154121749</p>
+        <p><stron>Email: </strong> 1mohamdjavad1388@gmail.com </p>
+    </div>
     <div class="container">
-        <img src="https://raw.githubusercontent.com/JavadCamback/EnterAi/main/photo14151978297.jpg" alt="توضیح تصویر">
+        <img src="https://raw.githubusercontent.com/Serverqp/test_use/main/MGH_3613.JPG" alt="Small Icon">
         <h1>زندگی نامه</h1>
-        <p>
-            محمدجواد جاودانفرد زاده 5 آذر 1388 در شهر مشهد متولد شد.
-او در همان زمان نوزادی و کودکی بسیار سخت کوش بود و به فکر آینده خود بود که چگونه پول در بیاورد!
-از همان کودکی یعنی حدود 6-7 سالگی کار خود را در صنعت گیمری آغاز کرد و با اشتیاق به کار خود ادامه داد.
-او پس از فارغ التحصیل شدن در کلاس ششم در مدرسه نوین به کار خود در مدرسه ادامه داد و از کلاس هفتم به شغل غیر شریف استریمری روی آورد ولی چون در آن کار موفقیت آنچنانی کسب نکرد و فقط حدود 1000 دنبال کننده در کانال آپارات خود کسب کرد.
-پس از اتمام کلاس هشتم او تصمیم گرفت از حرفه استریمری خداحافظی کند و به شغل شریف برنامه نویسی روی آورد.
-پس از تلاش های مکرر بلاخره موفق شد اولین سایت خود را 
-بسازد و بلاخره در این کار موفق شد. 
-در حال حاضر او در مدرسه معارف سجادیه تحصیل میکند و با بی امیدی به زندگی خود ادامه میدهد.
-
+        <p>محمدجواد جاودانفرد زاده 5 آذر 1388 در شهر مشهد متولد شد.
+            او در همان زمان نوزادی و کودکی بسیار سخت کوش بود و به فکر آینده خود بود که چگونه در زندگی موفق شود!
+            از همان کودکی یعنی حدود 6-7 سالگی کار خود را در صنعت گیمری آغاز کرد و با اشتیاق به کار خود ادامه داد.
+            او پس از فارغ التحصیل شدن در کلاس ششم در مدرسه به کار خود در مدرسه ادامه داد و از کلاس هفتم به شغل غیر شریف استریمری روی آورد ولی چون در آن کار موفقیت آنچنانی کسب نکرد و فقط حدود 1000 دنبال کننده در کانال آپارات خود کسب کرد.
+            پس از اتمام کلاس هشتم او تصمیم گرفت از حرفه استریمری خداحافظی کند و به شغل شریف برنامه نویسی روی آورد.
+            پس از تلاش های مکرر بلاخره موفق شد اولین سایت خود را 
+            بسازد و بلاخره در این کار موفق شد. 
+         در حال حاضر او چندین سایت را ساخته و چندین بازی را هم به انتشار درآورده است.
         </p>
     </div>
+    <script>
+        function toggleInfoBox() {
+            const infoBox = document.getElementById('infoBox');
+            infoBox.style.display = infoBox.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </body>
 </html>
