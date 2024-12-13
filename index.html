@@ -95,104 +95,105 @@
         .info-box strong {
             color: #ffcc00;
         }
+
         .myket-btn {
-    position: fixed;
-    top: 12px; /* فاصله از بالای صفحه */
-    left: 10px; /* فاصله از سمت چپ صفحه */
-    z-index: 1000; /* اولویت نمایش بالاتر از سایر محتوا */
-}
+            position: fixed;
+            top: 12px; /* فاصله از بالای صفحه */
+            left: 10px; /* فاصله از سمت چپ صفحه */
+            z-index: 1000; /* اولویت نمایش بالاتر از سایر محتوا */
+        }
 
-.myket-btn a img {
-    width: 150px; /* اندازه تصویر */
-    height: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 8px; /* گوشه‌های دکمه گرد شود */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* سایه برای دکمه */
-}
+        .myket-btn a img {
+            width: 150px; /* اندازه تصویر */
+            height: auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 8px; /* گوشه‌های دکمه گرد شود */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* سایه برای دکمه */
+        }
 
-.myket-btn a img:hover {
-    transform: scale(1.1); /* بزرگ شدن هنگام هاور */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* سایه قوی‌تر هنگام هاور */
-}
-@media (max-width: 768px) {
-    body {
-        padding: 10px; /* اضافه کردن فاصله در اطراف صفحه */
-        overflow: auto; /* حذف محدودیت اسکرول */
-        height: auto; /* تنظیم ارتفاع برای گوشی */
-    }
+        .myket-btn a img:hover {
+            transform: scale(1.1); /* بزرگ شدن هنگام هاور */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* سایه قوی‌تر هنگام هاور */
+        }
 
-    .container {
-        max-width: 100%; /* کادر به اندازه عرض صفحه کوچک‌تر شود */
-        padding: 15px; /* کاهش فاصله داخلی برای گوشی */
-        font-size: 14px; /* کوچک‌تر کردن متن */
-    }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px; /* اضافه کردن فاصله در اطراف صفحه */
+                overflow: auto; /* حذف محدودیت اسکرول */
+                height: auto; /* تنظیم ارتفاع برای گوشی */
+            }
 
-    .container h1 {
-        font-size: 20px; /* کوچک‌تر کردن اندازه عنوان */
-    }
+            .container {
+                max-width: 100%; /* کادر به اندازه عرض صفحه کوچک‌تر شود */
+                padding: 15px; /* کاهش فاصله داخلی برای گوشی */
+                font-size: 14px; /* کوچک‌تر کردن متن */
+            }
 
-    .container p {
-        font-size: 16px; /* کوچک‌تر کردن اندازه متن */
-    }
+            .container h1 {
+                font-size: 20px; /* کوچک‌تر کردن اندازه عنوان */
+            }
 
-    .info-button {
-        top: 15px; /* فاصله بالای دکمه "درباره" برای گوشی */
-        right: 15px;
-        font-size: 14px; /* کوچک‌تر کردن متن دکمه */
-        padding: 10px 15px; /* تنظیم ابعاد دکمه */
-    }
+            .container p {
+                font-size: 16px; /* کوچک‌تر کردن اندازه متن */
+            }
 
-    .info-box {
-        top: 50px; /* تنظیم موقعیت اطلاعات */
-        right: 10px;
-        font-size: 14px; /* کوچک‌تر کردن متن در کادر اطلاعات */
-    }
+            .info-button {
+                top: 15px; /* فاصله بالای دکمه "درباره" برای گوشی */
+                right: 15px;
+                font-size: 14px; /* کوچک‌تر کردن متن دکمه */
+                padding: 10px 15px; /* تنظیم ابعاد دکمه */
+            }
 
-    .myket-btn a img {
-        width: 120px; /* کوچک‌تر کردن دکمه مایکت برای گوشی */
-    }
-}
+            .info-box {
+                top: 50px; /* تنظیم موقعیت اطلاعات */
+                right: 10px;
+                font-size: 14px; /* کوچک‌تر کردن متن در کادر اطلاعات */
+            }
 
-@media (max-width: 480px) {
-    .container {
-        font-size: 12px; /* کوچک‌تر کردن فونت برای صفحه‌های کوچک‌تر */
-        padding: 10px;
-    }
+            .myket-btn a img {
+                width: 120px; /* کوچک‌تر کردن دکمه مایکت برای گوشی */
+            }
+        }
 
-    .container h1 {
-        font-size: 18px; /* کوچک‌تر کردن اندازه عنوان برای موبایل */
-    }
+        @media (max-width: 480px) {
+            .container {
+                font-size: 12px; /* کوچک‌تر کردن فونت برای صفحه‌های کوچک‌تر */
+                padding: 10px;
+            }
 
-    .info-button {
-        font-size: 12px; /* کوچک‌تر کردن متن دکمه */
-        padding: 8px 12px; /* تنظیم ابعاد برای موبایل */
-    }
+            .container h1 {
+                font-size: 18px; /* کوچک‌تر کردن اندازه عنوان برای موبایل */
+            }
 
-    .info-box {
-        font-size: 12px; /* تنظیم متن کادر اطلاعات برای موبایل */
-    }
+            .info-button {
+                font-size: 12px; /* کوچک‌تر کردن متن دکمه */
+                padding: 8px 12px; /* تنظیم ابعاد برای موبایل */
+            }
 
-    .myket-btn a img {
-        width: 100px; /* کوچک‌تر کردن دکمه مایکت در گوشی‌های کوچک‌تر */
-    }
-}
+            .info-box {
+                font-size: 12px; /* تنظیم متن کادر اطلاعات برای موبایل */
+            }
 
-        
+            .myket-btn a img {
+                width: 100px; /* کوچک‌تر کردن دکمه مایکت در گوشی‌های کوچک‌تر */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="myket-btn">
-    <a href="https://myket.ir/app/com.app.myapp.tNZCgatXex?utm_source=search-ads-gift&utm_medium=cpc" target="_blank">
-        <img src="https://myket.ir/core/images/logo/get1-fa.png" alt="دریافت از مایکت">
-    </a>
-</div>
+        <a href="https://myket.ir/app/com.app.myapp.tNZCgatXex?utm_source=search-ads-gift&utm_medium=cpc" target="_blank">
+            <img src="https://myket.ir/core/images/logo/get1-fa.png" alt="دریافت از مایکت">
+        </a>
+    </div>
 
     <button class="info-button" onclick="toggleInfoBox()">درباره</button>
     <div class="info-box" id="infoBox">
         <p><strong>محل سکونت:</strong>مشهد - میدان شهدا</p>
         <p><strong>شماره همراه:</strong> 09154121749</p>
-        <p><stron>Email: </strong> 1mohamdjavad1388@gmail.com </p>
+        <p><strong>Email: </strong> 1mohamdjavad1388@gmail.com </p>
     </div>
+
     <div class="container">
         <img src="https://raw.githubusercontent.com/Serverqp/test_use/main/MGH_3613.JPG" alt="Small Icon">
         <h1>زندگی نامه</h1>
@@ -206,11 +207,11 @@
          در حال حاضر او چندین سایت را ساخته و چندین بازی را هم به انتشار درآورده است.
         </p>
     </div>
+
     <script>
         function toggleInfoBox() {
             const infoBox = document.getElementById('infoBox');
             infoBox.style.display = infoBox.style.display === 'block' ? 'none' : 'block';
-            
         }
     </script>
 </body>
