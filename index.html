@@ -114,6 +114,68 @@
     transform: scale(1.1); /* بزرگ شدن هنگام هاور */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* سایه قوی‌تر هنگام هاور */
 }
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* اضافه کردن فاصله در اطراف صفحه */
+        overflow: auto; /* حذف محدودیت اسکرول */
+        height: auto; /* تنظیم ارتفاع برای گوشی */
+    }
+
+    .container {
+        max-width: 100%; /* کادر به اندازه عرض صفحه کوچک‌تر شود */
+        padding: 15px; /* کاهش فاصله داخلی برای گوشی */
+        font-size: 14px; /* کوچک‌تر کردن متن */
+    }
+
+    .container h1 {
+        font-size: 20px; /* کوچک‌تر کردن اندازه عنوان */
+    }
+
+    .container p {
+        font-size: 16px; /* کوچک‌تر کردن اندازه متن */
+    }
+
+    .info-button {
+        top: 15px; /* فاصله بالای دکمه "درباره" برای گوشی */
+        right: 15px;
+        font-size: 14px; /* کوچک‌تر کردن متن دکمه */
+        padding: 10px 15px; /* تنظیم ابعاد دکمه */
+    }
+
+    .info-box {
+        top: 50px; /* تنظیم موقعیت اطلاعات */
+        right: 10px;
+        font-size: 14px; /* کوچک‌تر کردن متن در کادر اطلاعات */
+    }
+
+    .myket-btn a img {
+        width: 120px; /* کوچک‌تر کردن دکمه مایکت برای گوشی */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        font-size: 12px; /* کوچک‌تر کردن فونت برای صفحه‌های کوچک‌تر */
+        padding: 10px;
+    }
+
+    .container h1 {
+        font-size: 18px; /* کوچک‌تر کردن اندازه عنوان برای موبایل */
+    }
+
+    .info-button {
+        font-size: 12px; /* کوچک‌تر کردن متن دکمه */
+        padding: 8px 12px; /* تنظیم ابعاد برای موبایل */
+    }
+
+    .info-box {
+        font-size: 12px; /* تنظیم متن کادر اطلاعات برای موبایل */
+    }
+
+    .myket-btn a img {
+        width: 100px; /* کوچک‌تر کردن دکمه مایکت در گوشی‌های کوچک‌تر */
+    }
+}
 
         
     </style>
