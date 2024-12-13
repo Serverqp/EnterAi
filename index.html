@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="CnHP09U7A3XH-dJJSxGr5rx1SQpmiYThyq0eh7fUShI" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="زندگی نامه محمدجواد جاودانفرد در یک نگاه">
+    <meta name="keywords" content="محمدجواد جاودانفرد , زندگی نامه محمدجواد جاودانفرد">
     <title>زندگی نامه محمدجواد جاودانفرد</title>
     <style>
         body {
@@ -94,9 +95,36 @@
         .info-box strong {
             color: #ffcc00;
         }
+        .myket-btn {
+    position: fixed;
+    top: 12px; /* فاصله از بالای صفحه */
+    left: 10px; /* فاصله از سمت چپ صفحه */
+    z-index: 1000; /* اولویت نمایش بالاتر از سایر محتوا */
+}
+
+.myket-btn a img {
+    width: 150px; /* اندازه تصویر */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px; /* گوشه‌های دکمه گرد شود */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* سایه برای دکمه */
+}
+
+.myket-btn a img:hover {
+    transform: scale(1.1); /* بزرگ شدن هنگام هاور */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* سایه قوی‌تر هنگام هاور */
+}
+
+        
     </style>
 </head>
 <body>
+    <div class="myket-btn">
+    <a href="https://myket.ir/app/com.app.myapp.tNZCgatXex?utm_source=search-ads-gift&utm_medium=cpc" target="_blank">
+        <img src="https://myket.ir/core/images/logo/get1-fa.png" alt="دریافت از مایکت">
+    </a>
+</div>
+
     <button class="info-button" onclick="toggleInfoBox()">درباره</button>
     <div class="info-box" id="infoBox">
         <p><strong>محل سکونت:</strong>مشهد - میدان شهدا</p>
@@ -120,6 +148,7 @@
         function toggleInfoBox() {
             const infoBox = document.getElementById('infoBox');
             infoBox.style.display = infoBox.style.display === 'block' ? 'none' : 'block';
+            
         }
     </script>
 </body>
