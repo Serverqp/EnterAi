@@ -38,7 +38,7 @@
         }
 
         .container img {
-    max-width: 100px; /* ابعاد تصویر */
+    max-width: 120px; /* ابعاد تصویر */
     margin-bottom: 15px; /* فاصله پایین تصویر */
     transform: rotate(-90deg); /* جلوگیری از هرگونه چرخش */
     display: block; /* برای وسط‌چین کردن */
@@ -56,25 +56,27 @@
             margin: 0;
             font-size: 20px;
             color: #dcdcdc;
+            z-index: 1;
+            position: relative;
         }
 
         .info-button {
             position: absolute;
             top: 20px;
             right: 20px;
-            padding: 12px 20px;
+            padding: 30px 40px;
             background-color: #03088e;
             color: #fff;
             border: none;
             border-radius: 30px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 50px;
             box-shadow: 0 5px 15px rgba(6, 186, 180, 0.937);
             transition: all 0.3s ease;
         }
 
         .info-button:hover {
-            background-color: #444;
+            background-color: #840f0f;
             transform: translateY(-3px);
         }
 
@@ -90,6 +92,8 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
             max-width: 320px;
             font-size: 16px;
+            z-index: 10;
+            position: absolute;
         }
 
         .info-box p {
@@ -108,7 +112,7 @@
         }
 
         .myket-btn a img {
-            width: 150px; /* اندازه تصویر */
+            width: 180px; /* اندازه تصویر */
             height: auto;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border-radius: 8px; /* گوشه‌های دکمه گرد شود */
@@ -191,7 +195,7 @@
         </a>
     </div>
 
-    <button class="info-button" onclick="toggleInfoBox()">درباره</button>
+    <button class="info-button" onclick="toggleInfoBox()">about</button>
     <div class="info-box" id="infoBox">
         <p><strong>محل سکونت:</strong>مشهد - میدان شهدا</p>
         <p><strong>شماره همراه:</strong> 09154121749</p>
@@ -199,7 +203,7 @@
     </div>
 
     <div class="container">
-        <img src="https://raw.githubusercontent.com/Serverqp/EnterAi/main/MGH_3613.JPG" alt="Small Icon">
+        <img src="https://raw.githubusercontent.com/Serverqp/test_use/main/MGH_3613.JPG" alt="Small Icon">
         <h1>زندگی نامه</h1>
         <p>محمدجواد جاودانفرد زاده 5 آذر 1388 در شهر مشهد متولد شد.
             او در همان زمان نوزادی و کودکی بسیار سخت کوش بود و به فکر آینده خود بود که چگونه در زندگی موفق شود!
