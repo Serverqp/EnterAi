@@ -1,127 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!-- متا تگ‌های Open Graph -->
-<meta property="og:title" content="زندگی نامه محمدجواد جاودانفرد">
-<meta property="og:description" content="اطلاعات و زندگی‌نامه محمدجواد جاودانفرد">
-<meta property="og:image" content="https://raw.githubusercontent.com/Serverqp/EnterAi/main/MGH_3613-1080X720_edit_8695612847109.jpeg"> <!-- آدرس تصویر -->
-<meta property="og:url" content="https://example.com">
-<meta property="og:type" content="website">
-
-<!-- متا تگ‌های Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="زندگی نامه محمدجواد جاودانفرد">
-<meta name="twitter:description" content="اطلاعات و زندگی‌نامه محمدجواد جاودانفرد">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/Serverqp/EnterAi/main/MGH_3613-1080X720_edit_8695612847109.jpeg"> <!-- آدرس تصویر -->
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="زندگی نامه محمدجواد جاودانفرد در یک نگاه">
-    <meta name="keywords" content="محمدجواد جاودانفرد , زندگی نامه محمدجواد جاودانفرد , محمدجواد جاودان فرد , زندگی نامه محمدجواد جاودان فرد , زندگینامه محمدجواد جاودانفرد">
-    <title>زندگی نامه محمدجواد جاودانفرد</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-            background: linear-gradient(100deg, #b81802, rgb(6, 63, 220), #c5cc00);
-            background-size: 400% 400%;
-            animation: gradientAnimation 10s ease infinite;
-        }
-
-        @keyframes gradientAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .container {
-            text-align: center;
-            background-color: rgba(50, 50, 50, 0.85);
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            max-width: 400px;
-            width: 90%;
-        }
-
-        .container img {
-    max-width: 120px; /* ابعاد تصویر */
-    margin-bottom: 15px; /* فاصله پایین تصویر */
-    transform: rotate(0deg); /* جلوگیری از هرگونه چرخش */
-    display: block; /* برای وسط‌چین کردن */
-    margin: 20px auto 15px auto; /* وسط‌چین در عرض */
+<title>محمدجواد جاودانفرد</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+box-sizing: border-box;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+.header {
+padding: 80px;
+text-align: center;
+background: linear-gradient(100deg, #b81802, rgb(6, 63, 220), #c5cc00);
+background-size: 100% 100%;
+            animation: gradientAnimation 50s ease infinite;
+color: white;
+}
+.header h1 {
+font-size: 40px;
+}
+.navbar {
+overflow: hidden;
+background: linear-gradient(100deg, #0b0b0b, rgb(172, 169, 169), #000000);
+position: sticky;
+position: -webkit-sticky;
+top: 0;
+}
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+.navbar a.right {
+float: right;
+}
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+.navbar a.active {
+background-color: #830707;
+color: white;
+}
+.row {
+display: -ms-flexbox; /* IE10 */
+display: flex;
+-ms-flex-wrap: wrap; /* IE10 */
+flex-wrap: wrap;
+}
+.side {
+-ms-flex: 30%; /* IE10 */
+flex: 30%;
+background-color: #f1f1f1;
+padding: 20px;
+}
+.main {
+-ms-flex: 70%; /* IE10 */
+flex: 70%;
+background-color: white;
+padding: 20px;
+}
+.fakeimg {
+background-color: #ac9e9e;
+width: 100%;
+padding: 20px;
+}
+.footer {
+padding: 20px;
+text-align: center;
+background: #ddd;
+}
+@media screen and (max-width: 700px) {
+.row {
+flex-direction: column;
+}
+}
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
 }
 
-
-        .container h1 {
-            margin: 0 0 15px;
-            font-size: 24px;
-            color: #ffffff;
-        }
-
-        .container p {
-            margin: 0;
-            font-size: 20px;
-            color: #dcdcdc;
-            z-index: 1;
-            position: relative;
-        }
-
-        .info-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            padding: 30px 40px;
-            background-color: #03088e;
-            color: #fff;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            font-size: 50px;
-            box-shadow: 0 5px 15px rgba(6, 186, 180, 0.937);
-            transition: all 0.3s ease;
-        }
-
-        .info-button:hover {
-            background-color: #840f0f;
-            transform: translateY(-3px);
-        }
-
-        .info-box {
-            display: none;
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            background-color: rgba(50, 50, 50, 0.95);
-            color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-            max-width: 320px;
-            font-size: 16px;
-            z-index: 10;
-            position: absolute;
-        }
-
-        .info-box p {
-            margin-bottom: 10px;
-        }
-
-        .info-box strong {
-            color: #ffcc00;
-        }
-
-        .myket-btn {
+.myket-btn {
             position: fixed;
-            top: 20px; /* فاصله از بالای صفحه */
-            left: 20px; /* فاصله از سمت چپ صفحه */
+            top: 10px; /* فاصله از بالای صفحه */
+            left: 120px; /* فاصله از سمت چپ صفحه */
             z-index: 1000; /* اولویت نمایش بالاتر از سایر محتوا */
         }
 
@@ -138,103 +109,70 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* سایه قوی‌تر هنگام هاور */
         }
 
-        @media (max-width: 768px) {
-            body {
-                padding: 10px; /* اضافه کردن فاصله در اطراف صفحه */
-                overflow: auto; /* حذف محدودیت اسکرول */
-                height: auto; /* تنظیم ارتفاع برای گوشی */
-            }
-
-            .container {
-                max-width: 100%; /* کادر به اندازه عرض صفحه کوچک‌تر شود */
-                padding: 15px; /* کاهش فاصله داخلی برای گوشی */
-                font-size: 14px; /* کوچک‌تر کردن متن */
-            }
-
-            .container h1 {
-                font-size: 20px; /* کوچک‌تر کردن اندازه عنوان */
-            }
-
-            .container p {
-                font-size: 16px; /* کوچک‌تر کردن اندازه متن */
-            }
-
-            .info-button {
-                top: 15px; /* فاصله بالای دکمه "درباره" برای گوشی */
-                right: 15px;
-                font-size: 14px; /* کوچک‌تر کردن متن دکمه */
-                padding: 10px 15px; /* تنظیم ابعاد دکمه */
-            }
-
-            .info-box {
-                top: 50px; /* تنظیم موقعیت اطلاعات */
-                right: 10px;
-                font-size: 14px; /* کوچک‌تر کردن متن در کادر اطلاعات */
-            }
-
-            .myket-btn a img {
-                width: 120px; /* کوچک‌تر کردن دکمه مایکت برای گوشی */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                font-size: 12px; /* کوچک‌تر کردن فونت برای صفحه‌های کوچک‌تر */
-                padding: 10px;
-            }
-
-            .container h1 {
-                font-size: 18px; /* کوچک‌تر کردن اندازه عنوان برای موبایل */
-            }
-
-            .info-button {
-                font-size: 12px; /* کوچک‌تر کردن متن دکمه */
-                padding: 8px 12px; /* تنظیم ابعاد برای موبایل */
-            }
-
-            .info-box {
-                font-size: 12px; /* تنظیم متن کادر اطلاعات برای موبایل */
-            }
-
-            .myket-btn a img {
-                width: 100px; /* کوچک‌تر کردن دکمه مایکت در گوشی‌های کوچک‌تر */
-            }
-        }
-    </style>
+</style>
 </head>
 <body>
-    <div class="myket-btn">
-        <a href="https://myket.ir/app/com.app.myapp.tNZCgatXex?utm_source=search-ads-gift&utm_medium=cpc" target="_blank">
-            <img src="https://myket.ir/core/images/logo/get1-fa.png" alt="دریافت از مایکت">
-        </a>
-    </div>
+  <div class="myket-btn">
+    <a href="https://myket.ir/app/com.app.myapp.tNZCgatXex?utm_source=search-ads-gift&utm_medium=cpc" target="_blank">
+        <img src="https://myket.ir/core/images/logo/get1-fa.png" alt="دریافت از مایکت">
+    </a>
+</div>
+<div class="header">
+<h1>✨محمدجواد جاودانفرد✨
+</h1>
+<p style="font-weight: bold">!سایت شخصی محمدجواد جاودانفرد اینجاست</p>
+</div>
 
-    <button class="info-button" onclick="toggleInfoBox()">about</button>
-    <div class="info-box" id="infoBox">
-        <p><strong>محل سکونت:</strong>مشهد - میدان شهدا</p>
-        <p><strong>شماره همراه:</strong> 09154121749</p>
-        <p><strong>Email: </strong> 1mohamdjavad1388@gmail.com </p>
-    </div>
+<div class="navbar">
+<a href="#" class="active">صفحه اصلی</a>
+<a href="https://serverqp.github.io/Mj/">💥زندگی نامه من💥</a>
+<a href="https://serverqp.github.io/DarAmad/">🧪مقالات شخصی من🧪</a>
+<a href="https://myket.ir/app/com.app.myapp.tNZCgatXex?utm_source=search-ads-gift&utm_medium=cpc">🎮دانلود بازی من🎮</a>
+</div>
 
-    <div class="container">
-        <img src="https://raw.githubusercontent.com/Serverqp/EnterAi/main/MGH_3613-1080X720_edit_8695612847109.jpeg" alt="Small Icon">
-        <h1>زندگی نامه</h1>
-        <p>محمدجواد جاودانفرد زاده 5 آذر 1388 در شهر مشهد متولد شد.
-            او در همان زمان نوزادی و کودکی بسیار سخت کوش بود و به فکر آینده خود بود که چگونه در زندگی موفق شود!
-            از همان کودکی یعنی حدود 6-7 سالگی کار خود را در صنعت گیمری آغاز کرد و با اشتیاق به کار خود ادامه داد.
-            او پس از فارغ التحصیل شدن در کلاس ششم در مدرسه به کار خود در مدرسه ادامه داد و از کلاس هفتم به شغل غیر شریف استریمری روی آورد ولی چون در آن کار موفقیت آنچنانی کسب نکرد و فقط حدود 1000 دنبال کننده در کانال آپارات خود کسب کرد.
-            پس از اتمام کلاس هشتم او تصمیم گرفت از حرفه استریمری خداحافظی کند و به شغل شریف برنامه نویسی روی آورد.
-            پس از تلاش های مکرر بلاخره موفق شد اولین سایت خود را 
-            بسازد و بلاخره در این کار موفق شد. 
-         در حال حاضر او چندین سایت را ساخته و چندین بازی را هم به انتشار درآورده است.
-        </p>
-    </div>
+<div class="row">
+<div class="side">
+<h2>:موقعیت مکانی من</h2>
+<h5>من در شهر مشهد خیابان توحید توحید 19 پلاک 12 زندگی میکنم</h5>
+<img src="https://raw.githubusercontent.com/Serverqp/EnterAi/main/MGH_3613-1080X720_edit_8695612847109.jpeg" alt="موقعیت مکانی" style="width:100%; height:500px;">
+<p>✌این یک تصویر قدیمی در تیر ماه سال 1401 از من است✌</p>
+<h3>علایق من</h3>
+<p>من به بازی های کامپیوتری علاقه زیادی دارم و تا الان 3 تا بازی داستانی رو تموم کردم که تصاویرش این زیر هست</p>
+<img src="https://gamedub.net/wp-content/uploads/2024/03/GTA-V-Farsi-Dub-Cover-Gamedub.jpg" alt="تصویر" style="width:30%; height:90px;">
+<img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" alt="تصویر" style="width:30%; height:90px;">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAMg41SrNpRVNg29DIa65Dr0liAZ2v73gDgA&s" alt="تصویر" style="width:30%; height:90px;">
+</div>
+<div class="main">
+<h2>درباره من</h2>
+<h5>👇این زیر یکم بیشتر درباره خودم بهتون گفتم</h5>
+<div> 
+  <div style="margin-left: -20px;">
+  <video width="110%" height="200px" autoplay loop muted playsinline>
+    <source src="https://raw.githubusercontent.com/Serverqp/DarAmad/main/mylivewallpapers.com-Eyeball.mp4" type="video/mp4">
+    مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+  </video>
+</div>
+<p>🎃</p>
+<p>من محمدجواد جاودانفرد هستم 15 ساله متولد 5 آذر 1388. من تقریبا سعی کردم تو همه رشته های تکنولوژی  درحد یک فعالیت کوچیک هم داشته باشم و به همین خاطر گفتم بیام یک سایت بنویسم که نتیجش شد این. شما اطلاعات بیشتر رو میتونین از تو سایت زندگی نامه بخونید و لطفا بازی من رو از طریق دکمه بالا دانلود کنید</p>
+<br>
+<h2>سخن پایانی</h2>
+<h5>💚قبل از حرفم 2 تا صلوات بفرست💚</h5>
+<div style="margin-left: -20px;">
+  <video width="110%" height="200px" autoplay loop muted playsinline>
+    <source src="https://raw.githubusercontent.com/Serverqp/EnterAi/main/mylivewallpapers.com-Ghost-of-Death.mp4" type="video/mp4">
+    مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+  </video>
+</div>
+<p>📛تقاضا میشود📛</p>
+<p>از شما تقاضا میکنم که حتما از سایت زندگی نامه من بازدید کنید و بازی من رو از مایکت دانلود کنید که خیلی سرگرم کننده است. ممنون از شما که تا اینجا همراه من بودید </p>
+</div>
+</div>
 
-    <script>
-        function toggleInfoBox() {
-            const infoBox = document.getElementById('infoBox');
-            infoBox.style.display = infoBox.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
+<div class="footer">
+<h2>تمامی حقوق این سایت محفوظ است</h2>
+<h4>(ساخته شده با 🧡 توسط محمدجواد جاودانفرد)</h4>
+<h5>1403/9/25</h5>
+</div>
+
 </body>
-</html>
+</html> 
