@@ -5,7 +5,7 @@
   <title>محمدجواد جاودانفرد</title>
   <title>سایت محمدجواد جاودانفرد</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="keywords" content="زندگینامه محمدجواد جاودانفرد, زندگی نامه محمدجواد جاودانفرد, محمدجواد جاودانفرد, محمدجواد جاودان فرد, سایت محمدجواد جاودانفرد,">
+  <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
@@ -50,12 +50,13 @@
           <li><a href="#about">📢_درباره من_📢</a></li>
           <li><a href="#features">🏆_مقام های من_🏆</a></li>
           <li><a href="#pricing">💲_حمایت_💲</a></li>
+          <li><a href="#team">👨🏽‍🤝‍👨🏽_تیم ما_👨🏾‍🤝‍👨🏻</a></li>
           <li><a href="#gallery">🎞_گالری تصاویر_🎞</a></li>
           <li class="menu-has-children"><a href="">🎃_دیگر سایت های من_🎃</a>
             <ul>
-              <li><a href="https://serverqp.github.io/Mj/">👈___سایت زندگی نامه من</a></li>
-              <li><a href="https://serverqp.github.io/test_use/">👈___وبلاگ من</a></li>
-              <li><a href="https://serverqp.github.io/DarAmad/">👈___سایت تولید محتوای من</a></li>
+              <li><a href="https://serverqp.github.io/Mj/"> سایت زندگی نامه من___👈</a></li>
+              <li><a href="https://serverqp.github.io/test_use/">وبلاگ من___👈</a></li>
+              <li><a href="https://serverqp.github.io/DarAmad/">سایت تولید محتوای من___👈</a></li>
             </ul>
           </li>
           <li><a href="#contact">📞_تماس با ما_📞</a></li>
@@ -438,31 +439,29 @@
 
           <div class="col-lg-5 col-md-8">
             <div class="form">
-              <div id="sendmessage">پیام شما ارسال شد، متشکرم!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-row">
-                  <div class="form-group col-lg-6">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="نظر خود را به شماره من پیامک کنید این قسمت سایت هنوز راه اندازی نشده" data-rule="minlen:4" data-msg="باید حداقل از 4 کاراکتر تشکیل شده باشد" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="نظر خود را به شماره من پیامک کنید این قسمت سایت هنوز راه اندازی نشده" data-rule="email" data-msg="لطفا آدرس ایمیل خود را وارد کنید" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="نظر خود را به شماره من پیامک کنید این قسمت سایت هنوز راه اندازی نشده" data-rule="minlen:4" data-msg="لطفا یک موضوع حداقل 8 کاراکتری وارد کنید" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="لطفا ابتدا پیامی که میخواهید برای ما ارسال شود را بنویسید" placeholder="نظر خود را به شماره من پیامک کنید این قسمت سایت هنوز راه اندازی نشده"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <div class="text-center"><button type="submit" title="ارسال پیام">ارسال پیام</button></div>
-              </form>
+                <div id="sendmessage" style="display: none;">پیام شما ارسال شد، متشکرم!</div>
+                <div id="errormessage" style="display: none;">خطایی رخ داد، لطفا دوباره امتحان کنید!</div>
+                <form id="contactForm" method="post" role="form">
+                    <div class="form-row">
+                        <div class="form-group col-lg-6">
+                            <input type="text" name="name" class="form-control" placeholder="نام شما" data-rule="minlen:4" required />
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <input type="email" name="email" class="form-control" placeholder="ایمیل شما" data-rule="email" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="number" class="form-control" placeholder="شماره خود را وارد کنید" required />
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" rows="5" placeholder="پیام خود را بنویسید" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit">ارسال پیام</button>
+                    </div>
+                </form>
             </div>
-          </div>
+        </div>
 
         </div>
 
@@ -513,6 +512,32 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+ 
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    // مقداردهی اولیه EmailJS با کلید عمومی شما
+    emailjs.init("PutHU7ggMflkZ1o5E");
+
+    // افزودن EventListener برای فرم
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // ارسال اطلاعات فرم به EmailJS
+        emailjs.sendForm("service_qkr6lzj", "template_9qhsai5", this)
+            .then(function() {
+                document.getElementById("sendmessage").style.display = "block";
+                document.getElementById("errormessage").style.display = "none";
+            }, function(error) {
+                document.getElementById("errormessage").style.display = "block";
+                document.getElementById("sendmessage").style.display = "none";
+                alert("خطایی رخ داد: " + error.text);
+            });
+    });
+</script>
+  
+
+
 
 </body>
 </html>
